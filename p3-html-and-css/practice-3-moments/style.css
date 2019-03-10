@@ -44,6 +44,7 @@
 
 .moments-item {
     /* TODO: 设置朋友圈每条信息为 flexbox 布局 */
+    display: flex;
     padding: 20px 10px;
     border-bottom: 1px solid #ccc;
     font-size: 12px;
@@ -51,9 +52,12 @@
 .moments-item .item-left {
     /* TODO: 设置朋友圈信息的左边用户头像为固定宽高40px */
     margin-right: 10px;
+    width: 40px;
+    height: 40px;
 }
 .moments-item .item-right {
     /* TODO: 设置朋友圈信息的右边内容宽度不固定(flex 为 1) */
+    flex: 1;
 }
 .moments-item .item-name {
     color: #637ab4;
@@ -65,6 +69,8 @@
 }
 .moments-item .item-share {
     /* TODO: 设置转发信息的为 flexbox 布局，且内容垂直居中对齐（align-items）*/
+    display: flex;
+    align-items: center;
     padding: 5px;
     background: #f3f3f3;
     margin-bottom: 5px;
@@ -80,6 +86,8 @@
 .moments-item .item-only-img {
     /* TODO: 设置信息内容只有一张图片，其最大宽度或高度不超过180px */
     margin-bottom: 10px;
+    max-width: 180px;
+    max-height: 180px;
 }
 .moments-item .item-pic {
     display: inline-block;
@@ -87,6 +95,9 @@
 }
 .moments-item .pic-item {
     /* TODO: 设置信息有两张及以上的图片，需要统一裁剪成正方形图片（80px * 80px）显示，且设置为向左边浮动 */
+    width: 80px;
+    height: 80px;
+    float: left;
     margin-right: 10px;
     margin-bottom: 10px;
     background-repeat: no-repeat;
