@@ -100,6 +100,10 @@ html body {
     border-radius: 50%;
     box-shadow: 0 0 5px rgba(255,255,255, 0.4);
     /* TODO: 设置 CD 其循环旋转动画效果，动画名称为 circleRotate，动效为 linear，动画完成一个周期所花费的时间为5s, 且动画无限循环播放， */
+    animation-name: circleRotate;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .play-disc .disc-bg {
@@ -117,6 +121,9 @@ html body {
     background-size: cover;
     border-radius: 50%;
     /* TODO: 设置宽高都为容器的宽度的67% */
+    width: 67%;
+    /* height: 67%; */
+    padding-top: 67%;
 }
 .section-control {
     position: fixed;
@@ -131,6 +138,7 @@ html body {
     align-items: center;
     margin-bottom: 10px;
     /* TODO: 设置均匀排列其子元素，使相邻子元素间距离相同，首个元素放置于起点，末尾元素放置于终点（justify-content） */
+    justify-content: space-between;
 }
 .control-action::before,
 .control-action::after {
@@ -232,6 +240,7 @@ html body {
     height: 48px;
     margin-bottom: 20px;
    /* TODO: 设置均匀排列其子元素，使相邻子元素间距离相同，每个元素周围分配相同的空间 （justify-content）*/
+    justify-content: space-around;
 }
 
 .control-play .play-btn {
@@ -286,7 +295,7 @@ html body {
 @media (max-height: 540px) {
     .play-disc {
         /* TODO: 设置当屏幕最大高度小于540px时, CD 元素宽度为190px */ 
-        
+        width: 190px;
         margin-top: 58px;
     }
     .play-needle {
