@@ -5,8 +5,6 @@ This repository include 3 parts, that is the demos, the practices code and the p
 
 ## demos
 
-
-
 ## Practice
 
 ## Projects
